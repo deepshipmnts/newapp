@@ -1,14 +1,14 @@
 module Types
-  class UserArgumentType < Types::BaseObject
-    field :username, String, null: true
-    field :fullname, String, null: true
-    field :passwords, String, null: true
-    field :phone, Integer, null: true
-    field :email, String, null: true
-    field :shopename , String, null: true
-    field :shopaddress , String, null: true
-    field :district , String, null: true
-    field :pincode , Integer, null: true
-    field :features , String, null: true
+  class UserArgumentType < Types::BaseInputObject
+    argument :username, String, required: true
+    argument :fullname, String, required: true
+    argument :password, String, required: true
+    argument :phone, Integer, required: true
+    argument :email, String, required: true
+    argument :shopname , String, required: true
+    argument :shopaddress , String, required: true
+    argument :district , String, required: true
+    argument :pincode , Integer, required: true
+    argument :features , String, required: true
   end
 end
