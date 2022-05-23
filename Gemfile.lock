@@ -73,6 +73,10 @@ GEM
     graphql (2.0.7)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
+    json (2.6.2)
+    json_web_token (0.3.5)
+      json (~> 2.1)
+    jwt (2.3.0)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -151,6 +155,8 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   graphql (~> 2.0)
+  json_web_token
+  jwt
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)
